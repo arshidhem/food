@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Food Order System</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style1.css">
+    <script src="script1.js"></script>
+</head>
+<body>
+    <div class="container">
+        <h1 class="text-white text-center">Food Order System</h1>
+        <h4 class="head">Food Menu</h4>
+        <div class="row">
+            <div class="menu col-xs-10 col-md-5 col-sm-12 col-lg-5 col-xl-5">
+                <div>
+                    <img class="fd-img" src="image/chicken biryani.png" alt="Chicken Biryani">
+                </div>
+                <div>
+                    <span class="fd-item">Biriyani - ₹120</span>
+                    <button class="btn" onclick="addToOrder('Biriyani', 120)">Add to Order</button>
+                </div>
+            </div>
+            
+            <div class="menu col-xs-10 col-md-5 col-sm-12 col-lg-5 col-xl-5">
+                <div>
+                    <img class="fd-img" src="image/mandi.png" alt="Mandi">
+                </div>
+                <div>
+                    <span class="fd-item">Mandi - ₹200</span>
+                    <button class="btn" onclick="addToOrder('Mandi', 200)">Add to Order</button>
+                </div>
+            </div>
+            
+            <div class="menu col-xs-10 col-md-5 col-sm-12 col-lg-5 col-xl-5">
+                <div>
+                    <img class="fd-img" src="image/pizza.png" alt="Pizza">
+                </div>
+                <div>
+                    <span class="fd-item">Pizza - ₹175</span>
+                    <button class="btn" onclick="addToOrder('Pizza', 175)">Add to Order</button>
+                </div>
+            </div>
+
+            <div class="menu col-xs-10 col-md-5 col-sm-12 col-lg-5 col-xl-5">
+                <div>
+                    <img class="fd-img" src="image/burger.png" alt="Burger">
+                </div>
+                <div>
+                    <span class="fd-item">Burger - ₹150</span>
+                    <button class="btn" onclick="addToOrder('Burger', 150)">Add to Order</button>
+                </div>
+            </div>
+        </div>
+
+         
+        <h2 class="text-white">Order Details</h2>
+        <div id="order-summary"></div>
+   
+        
+        <div id="total-amount">
+            Total: ₹0
+        </div>
+        <br>
+        <button class="order-btn" onclick="placeOrder()">Place Order</button>
+
+    </div>
+</body>
+</html>
